@@ -75,7 +75,7 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product updated successfully.');
     }
 
-    // Remove the specified product
+
     public function destroy($id)
     {
         Product::findOrFail($id)->delete();
